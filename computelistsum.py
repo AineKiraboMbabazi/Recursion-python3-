@@ -12,4 +12,5 @@ def compute_sum(list1):
     return mysum
 
 if __name__ == '__main__':
-    print(compute_sum([1,2,3]))
+    print(compute_sum([1,2,3,[5,6]]))
+    
