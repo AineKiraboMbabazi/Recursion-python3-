@@ -1,4 +1,6 @@
 def compute_sum(list1):
+    if not isinstance(list1, list):
+        return 'Invalid argument type. This should be a list'
     mysum=0
     for i in list1:
         if isinstance(i,int):
@@ -6,11 +8,10 @@ def compute_sum(list1):
 
         elif isinstance(i,list):
             mysum+=compute_sum(i)
-
         else:
             pass
     return mysum
 
 if __name__ == '__main__':
-    print(compute_sum([1,2,3,[5,6]]))
+    print(compute_sum(['a',3,[5,6]]))
     
